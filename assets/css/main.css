@@ -294,6 +294,7 @@
 		a:hover {
 			border-bottom-color: transparent;
 			color: #ffe4b4;
+			cursor: pointer;
 		}
 
 	strong, b {
@@ -854,7 +855,7 @@
 	}
 
 		.image.filtered:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.5) 25%, rgba(227, 123, 124, 0.5) 50%, rgba(255, 228, 180, 0.5));
 			background-size: 128px 128px, auto;
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
@@ -868,6 +869,10 @@
 			height: 100%;
 			opacity: 1;
 			z-index: 1;
+		}
+
+		.image.filtered.profile:after {
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 		}
 
 		.image.filtered.tinted:after {
@@ -2379,9 +2384,9 @@
 			width: 12.5rem;
 		}
 
-		.panel .span-1-5 {
+		/*.panel .span-1-5 {
 			width: 15rem;
-		}
+		}*/
 
 		.panel .span-1-75 {
 			width: 17.5rem;
