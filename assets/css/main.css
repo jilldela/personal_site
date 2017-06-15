@@ -1153,6 +1153,7 @@
 
 		ul.contact-icons {
 			list-style: none;
+			justify-content: center;
 			padding-left: 0;
 		}
 
@@ -1318,7 +1319,7 @@
 					}
 
 			ul.grid-icons.four {
-				width: 29rem;
+				width: 27rem;
 			}
 
 				ul.grid-icons.four > li:nth-child(-n + 4) {
@@ -2176,7 +2177,7 @@
 
 		.panel > * {
 			position: relative;
-			min-width: 10rem;
+			min-width: 5rem;
 		}
 
 			.panel > *.color0 {
@@ -2259,6 +2260,14 @@
 			-ms-flex-direction: column;
 			flex-direction: column;
 			width: 22rem;
+		}
+
+		.live-links-title {
+			display: flex;
+			flex-direction: column;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
 		}
 
 		.live-links {
