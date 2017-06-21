@@ -3419,7 +3419,7 @@
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
-			justify-content: center;
+			justify-content: flex-end;
 			padding: 3.5rem 3.5rem 2rem 3.5rem ;
 		}
 
