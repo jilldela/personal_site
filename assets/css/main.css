@@ -1319,10 +1319,10 @@
 					}
 
 			ul.grid-icons.four {
-				width: 27rem;
+				width: 23rem;
 			}
 
-				ul.grid-icons.four > li:nth-child(-n + 4) {
+				/*ul.grid-icons.four > li:nth-child(-n + 4) {
 					margin-top: 0;
 				}
 
@@ -1336,7 +1336,19 @@
 
 					ul.grid-icons.four > li:nth-child(4n - 3):before {
 						display: none;
-					}
+					}*/
+						ul.grid-icons li {
+							margin: 10px;;
+						}
+
+						ul.grid-icons li span {
+							display: flex;
+							flex-direction: column;
+						}
+
+						ul.grid-icons li span p {
+							margin: 0;
+						}
 
 	dl {
 		margin: 0 0 1.5rem 0;
