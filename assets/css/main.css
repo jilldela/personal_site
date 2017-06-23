@@ -1796,7 +1796,7 @@
 				transition: transform 0.2s ease-in-out;
 			}
 
-			.gallery .image:after {
+			.gallery .image {
 				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
 				-ms-transition: opacity 0.2s ease-in-out;
@@ -1810,10 +1810,92 @@
 				transform: scale(1.15);
 			}
 
-			.gallery .image:hover:after {
-				background-image: url("../../images/overlay.png"), linear-gradient(-45deg, rgba(114, 97, 147, 0.75) 25%, rgba(227, 123, 124, 0.75));
-				/*opacity: 0;*/
+			.gallery .image:hover {
+				background-color: rgba(64, 38, 79, 0.90);
 			}
+
+			figure.image.filtered figcaption {
+				padding: 12%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			figure.image.filtered figcaption ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			figure.image.filtered figcaption ul li {
+				padding: 0;
+				text-align: center;
+			}
+
+			figure.image.filtered figcaption::before {
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				bottom: 30px;
+				left: 30px;
+				border: 1px solid #fff;
+				content: '';
+			}
+
+			figure.image-filtered h3 {
+				margin: 0;
+				line-height: 1em;
+				-webkit-transition: -webkit-transform 0.35s;
+				transition: transform 0.35s;
+				-webkit-transform: translate3d(0,100%,0);
+				transform: translate3d(0,100%,0);
+				color: transparent;
+			}
+
+			figure.image.filtered figcaption::before,
+			figure.image.filtered p {
+				opacity: 0;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+			}
+
+			figure.image.filtered p {
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+			}
+
+			ul.live-links {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+			}
+
+			figure.image.filtered:hover h3 {
+				-webkit-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+				color: white;
+				margin: 0;
+			}
+
+			figure.image.filtered:hover figcaption::before,
+			figure.image.filtered:hover p {
+				opacity: .90;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			figure.image.filtered:hover figcaption {
+				background-color: rgba(67, 64, 110, 0.9);
+			}
+
+			figure.image.filtered:hover img {
+				opacity: 0.05;
+			}
+
 
 		.gallery .group {
 			display: -moz-flex;
